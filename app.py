@@ -76,6 +76,7 @@ note_with_link = html.P([
 
 # Dash App
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     dcc.Graph(figure=fig),
